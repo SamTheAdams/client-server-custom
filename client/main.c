@@ -15,6 +15,7 @@ void downloadFile(char buffer[BUF_SIZE], char *URL);
 void uploadFile(char buffer[BUF_SIZE], char *URL);
 
 // General function type for handlers
+// General function type for handlers
 typedef void (*commandFunction)(char buffer[BUF_SIZE], char *URL);
 
 typedef struct

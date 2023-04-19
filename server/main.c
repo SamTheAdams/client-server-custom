@@ -100,6 +100,11 @@ void clientHandler(SOCKET clientSocket)
     {
         int commandSize = 0;
         quit = getUserCommand(&command);
+        if (quit)
+        {
+            printf("[i] Quit command received\n");
+            break;
+        }
 
         special = isSpecial(command);
         if (special)
